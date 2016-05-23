@@ -1,6 +1,6 @@
 ## API
 
-<a name="classes">**Classes**</a>
+###<a name="classes">Classes</a>
 * <code>[Interval](#class-Interval)</code> The [{Interval}](https://github.com/venkatperi/line-segment-ops/blob/v0.1.0/lib/Interval.coffee#L20) class represents a line segment on the
   the number line.
 
