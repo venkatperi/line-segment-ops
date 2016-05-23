@@ -27,14 +27,14 @@ Create a immutable [{Interval}](https://github.com/venkatperi/line-segment-ops/b
 
 Accepts the following types of inputs:
 
-* A [{String}](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) "<number> <sep> <number>" where sep can be any one of
+* a [{String}](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) "<number> <sep> <number>" where sep can be any one of
   a comma, semicolon, or a space
-* A {Array<Number>} of two numbers
-* An [{Object}](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object) with one of these key combinations:
+* a {Array<Number>} of two numbers
+* an [{Object}](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object) with one of these key combinations:
   * obj.from, obj.to
   * obj.start, obj.end
   * obj.a, obj.b
-* Or 2 `{Numbers}`
+* or 2 `{Numbers}`
 <hr/>
 
 <code>Interval::**contains(**other**)**</code> **<sub><sup><code>PUBLIC</code></sup></sub>**

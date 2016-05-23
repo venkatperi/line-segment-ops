@@ -35,14 +35,14 @@ module.exports = class Interval
   Public: Create a immutable {Interval} object
 
   Accepts the following types of inputs:
-  * A {String} "<number> <sep> <number>" where sep can be any one of
+  * a {String} "<number> <sep> <number>" where sep can be any one of
     a comma, semicolon, or a space
-  * A {Array<Number>} of two numbers
-  * An {Object} with one of these key combinations:
+  * a {Array<Number>} of two numbers
+  * an {Object} with one of these key combinations:
     * obj.from, obj.to
     * obj.start, obj.end
     * obj.a, obj.b
-  * Or 2 {Numbers}
+  * or 2 {Numbers}
   
   ###
   constructor : ( args ) ->
@@ -56,6 +56,7 @@ module.exports = class Interval
   * `other` the other {Interval} 
   
   Returns {Boolean}. True if this {Interval} `contains` the other other.
+
   ###
   contains : ( other ) =>
     x = @difference(other)
@@ -131,7 +132,8 @@ module.exports = class Interval
   
   * `others` {Array{Interval}} One or more intervals
   
-  Returns {Interval} or an {Array{Interval}}
+  Returns {Interval}
+  Returns {Array} of {Interval}
   ###
   union : ( others... ) =>
     @_process 1, Number.MAX_VALUE, others...
