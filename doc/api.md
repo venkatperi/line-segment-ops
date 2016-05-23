@@ -1,10 +1,8 @@
 ## API
 
-###<a name="classes">Classes</a>
  Class |  Summary
  ------| ------------
- <code>[Interval](#class-Interval)</code> | The [{Interval}](https://github.com/venkatperi/line-segment-ops/blob/v0.1.0/lib/Interval.coffee#L20) class represents a line segment on the
-  the number line.
+ <code>[Interval](#class-Interval)</code> | The [{Interval}](https://github.com/venkatperi/line-segment-ops/blob/v0.1.0/lib/Interval.coffee#L20) class represents a line segment on the   the number line.
 
 ### <a name="class-Interval">Interval</a> <b><sub><sup><code>CLASS  </code></sup></sub></b> [<img src="https://cdn.rawgit.com/github/octicons/master/svg/arrow-up.svg" alt="Back to Class List" height= "16px">](#classes)
 
