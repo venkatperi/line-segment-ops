@@ -1,6 +1,10 @@
 ## API
 
-### Interval <sub><sup><code>CLASS</code></sup></sub>
+<a name="classes">**Classes**</a>
+* <code>[Interval](#class-Interval)</code> The [{Interval}](https://github.com/venkatperi/line-segment-ops/blob/v0.1.0/lib/Interval.coffee#L20) class represents a line segment on the
+  the number line.
+
+### <a name="class-Interval">Interval</a><b><sub><sup><code>CLASS  </code></sup></sub></b> [<img src="https://cdn.rawgit.com/github/octicons/master/svg/arrow-up.svg" height= "16px">|back to class list](#classes)
 
 The [{Interval}](https://github.com/venkatperi/line-segment-ops/blob/v0.1.0/lib/Interval.coffee#L20) class represents a line segment on the
   the number line.
@@ -17,39 +21,43 @@ A couple of definitions:
 * The interior of an [{Interval}](https://github.com/venkatperi/line-segment-ops/blob/v0.1.0/lib/Interval.coffee#L20) is the set of all points
   in the [{Interval}](https://github.com/venkatperi/line-segment-ops/blob/v0.1.0/lib/Interval.coffee#L20) less its boundary (endpoints).
 
-<hr/>
-
-#### Properties <sub><sup><code>INTERVAL</code></sup></sub>
+######<a href="#" target="_blank"><img src="https://rawgit.com/venkatperi/line-segment-ops/master/assets/Line.svg" width="100%" height="1px"></a>
 
 
-**<code>a</code>** <sub><sup><code>PUBLIC</code></sup></sub>
+#### Properties
+
+<code><a href="#class-Interval">Interval::</a>**a</code>** <b><sub><sup><code>PUBLIC  </code></sup></sub></b>
 
 [{Number}](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) The start/left endpoint of this [{Interval}](https://github.com/venkatperi/line-segment-ops/blob/v0.1.0/lib/Interval.coffee#L20) 
 
-<hr/>
+######<a href="#" target="_blank"><img src="https://rawgit.com/venkatperi/line-segment-ops/master/assets/Line.svg" width="100%" height="1px"></a>
 
-**<code>b</code>** <sub><sup><code>PUBLIC</code></sup></sub>
+
+
+<code><a href="#class-Interval">Interval::</a>**b</code>** <b><sub><sup><code>PUBLIC  </code></sup></sub></b>
 
 [{Number}](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) The end/right endpoint of this [{Interval}](https://github.com/venkatperi/line-segment-ops/blob/v0.1.0/lib/Interval.coffee#L20) 
 
-<hr/>
+######<a href="#" target="_blank"><img src="https://rawgit.com/venkatperi/line-segment-ops/master/assets/Line.svg" width="100%" height="1px"></a>
 
-**<code>degenerate</code>** <sub><sup><code>PUBLIC</code></sup></sub>
+
+
+<code><a href="#class-Interval">Interval::</a>**degenerate</code>** <b><sub><sup><code>PUBLIC  </code></sup></sub></b>
 
 [{Boolean}](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean) True if this `{Instance}` has the same start and end points  
 
 
-<hr/>
-
-#### Methods <sub><sup><code>INTERVAL</code></sup></sub>
+######<a href="#" target="_blank"><img src="https://rawgit.com/venkatperi/line-segment-ops/master/assets/Line.svg" width="100%" height="1px"></a>
 
 
+#### Methods
 
-<code>Interval::**constructor(**arg1[, arg2]**)**</code> <sub><sup><code>PUBLIC</code></sup></sub>
 
+<code><a href="#class-Interval">Interval::</a></a>**constructor(**arg1[, arg2]**)**</code> <b><sub><sup><code>PUBLIC  </code></sup></sub></b> [<img src="https://cdn.rawgit.com/github/octicons/master/svg/code.svg" height= "16px">](https://github.com/venkatperi/line-segment-ops/blob/v0.1.0/lib/Interval.coffee#L55)
+ [<img src="https://cdn.rawgit.com/github/octicons/master/svg/arrow-up.svg" height= "16px">](#class-Interval)
 
-* <code>arg1:</code> can be a [{String}](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) or an [{Array}](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array) or [{Object}](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object) or a [{Number}](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)
-* <code>arg2:</code> [{Number}](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) 
+* <code>arg1</code> can be a [{String}](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) or an [{Array}](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array) or [{Object}](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object) or a [{Number}](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)
+* <code>arg2</code> [{Number}](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) 
 
 Creates a immutable [{Interval}](https://github.com/venkatperi/line-segment-ops/blob/v0.1.0/lib/Interval.coffee#L20) object
 
@@ -64,25 +72,27 @@ Creates a immutable [{Interval}](https://github.com/venkatperi/line-segment-ops/
 
 
 
-<hr/>
-
-<code>Interval::**contains(**other**)**</code> <sub><sup><code>PUBLIC</code></sup></sub>
+######<a href="#" target="_blank"><img src="https://rawgit.com/venkatperi/line-segment-ops/master/assets/Line.svg" width="100%" height="1px"></a>
 
 
-* <code>other:</code> the other [{Interval}](https://github.com/venkatperi/line-segment-ops/blob/v0.1.0/lib/Interval.coffee#L20) 
+<code><a href="#class-Interval">Interval::</a></a>**contains(**other**)**</code> <b><sub><sup><code>PUBLIC  </code></sup></sub></b> [<img src="https://cdn.rawgit.com/github/octicons/master/svg/code.svg" height= "16px">](https://github.com/venkatperi/line-segment-ops/blob/v0.1.0/lib/Interval.coffee#L68)
+ [<img src="https://cdn.rawgit.com/github/octicons/master/svg/arrow-up.svg" height= "16px">](#class-Interval)
+
+* <code>other</code> the other [{Interval}](https://github.com/venkatperi/line-segment-ops/blob/v0.1.0/lib/Interval.coffee#L20) 
 
 Checks if this [{Interval}](https://github.com/venkatperi/line-segment-ops/blob/v0.1.0/lib/Interval.coffee#L20) contains the other.
 
 <em>Returns</em>
-* <code>Boolean:</code> Returns [{Boolean}](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean). True if this [{Interval}](https://github.com/venkatperi/line-segment-ops/blob/v0.1.0/lib/Interval.coffee#L20) `contains` the other other.
+* Returns [{Boolean}](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean). True if this [{Interval}](https://github.com/venkatperi/line-segment-ops/blob/v0.1.0/lib/Interval.coffee#L20) `contains` the other other.
 
 
-<hr/>
-
-<code>Interval::**overlaps(**other**)**</code> <sub><sup><code>PUBLIC</code></sup></sub>
+######<a href="#" target="_blank"><img src="https://rawgit.com/venkatperi/line-segment-ops/master/assets/Line.svg" width="100%" height="1px"></a>
 
 
-* <code>other:</code> the other [{Interval}](https://github.com/venkatperi/line-segment-ops/blob/v0.1.0/lib/Interval.coffee#L20)
+<code><a href="#class-Interval">Interval::</a></a>**overlaps(**other**)**</code> <b><sub><sup><code>PUBLIC  </code></sup></sub></b> [<img src="https://cdn.rawgit.com/github/octicons/master/svg/code.svg" height= "16px">](https://github.com/venkatperi/line-segment-ops/blob/v0.1.0/lib/Interval.coffee#L84)
+ [<img src="https://cdn.rawgit.com/github/octicons/master/svg/arrow-up.svg" height= "16px">](#class-Interval)
+
+* <code>other</code> the other [{Interval}](https://github.com/venkatperi/line-segment-ops/blob/v0.1.0/lib/Interval.coffee#L20)
 
 Checks if this [{Interval}](https://github.com/venkatperi/line-segment-ops/blob/v0.1.0/lib/Interval.coffee#L20) overlaps another.
 
@@ -90,15 +100,16 @@ For two [{Interval}](https://github.com/venkatperi/line-segment-ops/blob/v0.1.0/
 but not all points.
 
 <em>Returns</em>
-* <code>Boolean:</code> Returns [{Boolean}](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean). True if this [{Interval}](https://github.com/venkatperi/line-segment-ops/blob/v0.1.0/lib/Interval.coffee#L20) overlaps the other.
+* Returns [{Boolean}](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean). True if this [{Interval}](https://github.com/venkatperi/line-segment-ops/blob/v0.1.0/lib/Interval.coffee#L20) overlaps the other.
 
 
-<hr/>
-
-<code>Interval::**within(**other**)**</code> <sub><sup><code>PUBLIC</code></sup></sub>
+######<a href="#" target="_blank"><img src="https://rawgit.com/venkatperi/line-segment-ops/master/assets/Line.svg" width="100%" height="1px"></a>
 
 
-* <code>other:</code> the other [{Interval}](https://github.com/venkatperi/line-segment-ops/blob/v0.1.0/lib/Interval.coffee#L20)
+<code><a href="#class-Interval">Interval::</a></a>**within(**other**)**</code> <b><sub><sup><code>PUBLIC  </code></sup></sub></b> [<img src="https://cdn.rawgit.com/github/octicons/master/svg/code.svg" height= "16px">](https://github.com/venkatperi/line-segment-ops/blob/v0.1.0/lib/Interval.coffee#L101)
+ [<img src="https://cdn.rawgit.com/github/octicons/master/svg/arrow-up.svg" height= "16px">](#class-Interval)
+
+* <code>other</code> the other [{Interval}](https://github.com/venkatperi/line-segment-ops/blob/v0.1.0/lib/Interval.coffee#L20)
 
 Checks if this [{Interval}](https://github.com/venkatperi/line-segment-ops/blob/v0.1.0/lib/Interval.coffee#L20) is fully within another.
 
@@ -106,15 +117,16 @@ Checks if this [{Interval}](https://github.com/venkatperi/line-segment-ops/blob/
 X is completely within Y and neither of their endpoints touch.
 
 <em>Returns</em>
-* <code>Boolean:</code> Returns [{Boolean}](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean). True if this [{Interval}](https://github.com/venkatperi/line-segment-ops/blob/v0.1.0/lib/Interval.coffee#L20) is within the other.
+* Returns [{Boolean}](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean). True if this [{Interval}](https://github.com/venkatperi/line-segment-ops/blob/v0.1.0/lib/Interval.coffee#L20) is within the other.
 
 
-<hr/>
-
-<code>Interval::**touches(**other**)**</code> <sub><sup><code>PUBLIC</code></sup></sub>
+######<a href="#" target="_blank"><img src="https://rawgit.com/venkatperi/line-segment-ops/master/assets/Line.svg" width="100%" height="1px"></a>
 
 
-* <code>other:</code> the other [{Interval}](https://github.com/venkatperi/line-segment-ops/blob/v0.1.0/lib/Interval.coffee#L20)
+<code><a href="#class-Interval">Interval::</a></a>**touches(**other**)**</code> <b><sub><sup><code>PUBLIC  </code></sup></sub></b> [<img src="https://cdn.rawgit.com/github/octicons/master/svg/code.svg" height= "16px">](https://github.com/venkatperi/line-segment-ops/blob/v0.1.0/lib/Interval.coffee#L117)
+ [<img src="https://cdn.rawgit.com/github/octicons/master/svg/arrow-up.svg" height= "16px">](#class-Interval)
+
+* <code>other</code> the other [{Interval}](https://github.com/venkatperi/line-segment-ops/blob/v0.1.0/lib/Interval.coffee#L20)
 
 Checks if this [{Interval}](https://github.com/venkatperi/line-segment-ops/blob/v0.1.0/lib/Interval.coffee#L20) touches anothe.
 
@@ -124,15 +136,16 @@ Two line segments touch, if:
 * their interiors do not share any common points
 
 <em>Returns</em>
-* <code>Boolean:</code> Returns [{Boolean}](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean). True if this [{Interval}](https://github.com/venkatperi/line-segment-ops/blob/v0.1.0/lib/Interval.coffee#L20) touches the other.
+* Returns [{Boolean}](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean). True if this [{Interval}](https://github.com/venkatperi/line-segment-ops/blob/v0.1.0/lib/Interval.coffee#L20) touches the other.
 
 
-<hr/>
-
-<code>Interval::**disjoint(**other**)**</code> <sub><sup><code>PUBLIC</code></sup></sub>
+######<a href="#" target="_blank"><img src="https://rawgit.com/venkatperi/line-segment-ops/master/assets/Line.svg" width="100%" height="1px"></a>
 
 
-* <code>other:</code> the other [{Interval}](https://github.com/venkatperi/line-segment-ops/blob/v0.1.0/lib/Interval.coffee#L20)
+<code><a href="#class-Interval">Interval::</a></a>**disjoint(**other**)**</code> <b><sub><sup><code>PUBLIC  </code></sup></sub></b> [<img src="https://cdn.rawgit.com/github/octicons/master/svg/code.svg" height= "16px">](https://github.com/venkatperi/line-segment-ops/blob/v0.1.0/lib/Interval.coffee#L132)
+ [<img src="https://cdn.rawgit.com/github/octicons/master/svg/arrow-up.svg" height= "16px">](#class-Interval)
+
+* <code>other</code> the other [{Interval}](https://github.com/venkatperi/line-segment-ops/blob/v0.1.0/lib/Interval.coffee#L20)
 
 Checks if this [{Interval}](https://github.com/venkatperi/line-segment-ops/blob/v0.1.0/lib/Interval.coffee#L20) is `disjoint` with another.
 
@@ -140,44 +153,47 @@ Two [{Interval}](https://github.com/venkatperi/line-segment-ops/blob/v0.1.0/lib/
 i.e. if their intersection is the empty set. 
 
 <em>Returns</em>
-* <code>Boolean:</code> Returns [{Boolean}](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean). True if this [{Interval}](https://github.com/venkatperi/line-segment-ops/blob/v0.1.0/lib/Interval.coffee#L20) is disjoint with the other.
+* Returns [{Boolean}](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean). True if this [{Interval}](https://github.com/venkatperi/line-segment-ops/blob/v0.1.0/lib/Interval.coffee#L20) is disjoint with the other.
 
 
-<hr/>
-
-<code>Interval::**union(**others**)**</code> <sub><sup><code>PUBLIC</code></sup></sub>
+######<a href="#" target="_blank"><img src="https://rawgit.com/venkatperi/line-segment-ops/master/assets/Line.svg" width="100%" height="1px"></a>
 
 
-* <code>others:</code> {Array[{Interval}](https://github.com/venkatperi/line-segment-ops/blob/v0.1.0/lib/Interval.coffee#L20)} One or more intervals
+<code><a href="#class-Interval">Interval::</a></a>**union(**others**)**</code> <b><sub><sup><code>PUBLIC  </code></sup></sub></b> [<img src="https://cdn.rawgit.com/github/octicons/master/svg/code.svg" height= "16px">](https://github.com/venkatperi/line-segment-ops/blob/v0.1.0/lib/Interval.coffee#L145)
+ [<img src="https://cdn.rawgit.com/github/octicons/master/svg/arrow-up.svg" height= "16px">](#class-Interval)
+
+* <code>others</code> {Array[{Interval}](https://github.com/venkatperi/line-segment-ops/blob/v0.1.0/lib/Interval.coffee#L20)} One or more intervals
 
 Calculates the union of the given `{Intervals}`
 
 A union of intervals can result in an array of unconnected parts.
 
 <em>Returns</em>
-* <code>Interval:</code> Returns [{Interval}](https://github.com/venkatperi/line-segment-ops/blob/v0.1.0/lib/Interval.coffee#L20)
-* <code>Array:</code> Returns [{Array}](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array) of [{Interval}](https://github.com/venkatperi/line-segment-ops/blob/v0.1.0/lib/Interval.coffee#L20)
+* Returns [{Interval}](https://github.com/venkatperi/line-segment-ops/blob/v0.1.0/lib/Interval.coffee#L20)
+* Returns [{Array}](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array) of [{Interval}](https://github.com/venkatperi/line-segment-ops/blob/v0.1.0/lib/Interval.coffee#L20)
 
 
-<hr/>
-
-<code>Interval::**intersection(**other**)**</code> <sub><sup><code>PUBLIC</code></sup></sub>
+######<a href="#" target="_blank"><img src="https://rawgit.com/venkatperi/line-segment-ops/master/assets/Line.svg" width="100%" height="1px"></a>
 
 
-* <code>other:</code> the other [{Interval}](https://github.com/venkatperi/line-segment-ops/blob/v0.1.0/lib/Interval.coffee#L20)
+<code><a href="#class-Interval">Interval::</a></a>**intersection(**other**)**</code> <b><sub><sup><code>PUBLIC  </code></sup></sub></b> [<img src="https://cdn.rawgit.com/github/octicons/master/svg/code.svg" height= "16px">](https://github.com/venkatperi/line-segment-ops/blob/v0.1.0/lib/Interval.coffee#L156)
+ [<img src="https://cdn.rawgit.com/github/octicons/master/svg/arrow-up.svg" height= "16px">](#class-Interval)
+
+* <code>other</code> the other [{Interval}](https://github.com/venkatperi/line-segment-ops/blob/v0.1.0/lib/Interval.coffee#L20)
 
 Calculates the intersection, i.e. the points where they concur.
 
 <em>Returns</em>
-* <code>Interval:</code> Returns an [{Interval}](https://github.com/venkatperi/line-segment-ops/blob/v0.1.0/lib/Interval.coffee#L20) with the intersection or `` if the two do not intersect.
+* Returns an [{Interval}](https://github.com/venkatperi/line-segment-ops/blob/v0.1.0/lib/Interval.coffee#L20) with the intersection or `` if the two do not intersect.
 
 
-<hr/>
-
-<code>Interval::**difference(**other**)**</code> <sub><sup><code>PUBLIC</code></sup></sub>
+######<a href="#" target="_blank"><img src="https://rawgit.com/venkatperi/line-segment-ops/master/assets/Line.svg" width="100%" height="1px"></a>
 
 
-* <code>other:</code> the other [{Interval}](https://github.com/venkatperi/line-segment-ops/blob/v0.1.0/lib/Interval.coffee#L20)
+<code><a href="#class-Interval">Interval::</a></a>**difference(**other**)**</code> <b><sub><sup><code>PUBLIC  </code></sup></sub></b> [<img src="https://cdn.rawgit.com/github/octicons/master/svg/code.svg" height= "16px">](https://github.com/venkatperi/line-segment-ops/blob/v0.1.0/lib/Interval.coffee#L173)
+ [<img src="https://cdn.rawgit.com/github/octicons/master/svg/arrow-up.svg" height= "16px">](#class-Interval)
+
+* <code>other</code> the other [{Interval}](https://github.com/venkatperi/line-segment-ops/blob/v0.1.0/lib/Interval.coffee#L20)
 
 Calculates the difference between this [{Interval}](https://github.com/venkatperi/line-segment-ops/blob/v0.1.0/lib/Interval.coffee#L20) and another.
 
@@ -185,19 +201,20 @@ The difference between [{Interval}](https://github.com/venkatperi/line-segment-o
 in X which are not in Y. 
 
 <em>Returns</em>
-* <code>Interval:</code> Returns the difference which is one of:
+* Returns the difference which is one of:
 
 * [{Interval}](https://github.com/venkatperi/line-segment-ops/blob/v0.1.0/lib/Interval.coffee#L20) 
 * {Array[{Interval}](https://github.com/venkatperi/line-segment-ops/blob/v0.1.0/lib/Interval.coffee#L20)}
 *
 
 
-<hr/>
-
-<code>Interval::**xor(**other**)**</code> <sub><sup><code>PUBLIC</code></sup></sub>
+######<a href="#" target="_blank"><img src="https://rawgit.com/venkatperi/line-segment-ops/master/assets/Line.svg" width="100%" height="1px"></a>
 
 
-* <code>other:</code> the other [{Interval}](https://github.com/venkatperi/line-segment-ops/blob/v0.1.0/lib/Interval.coffee#L20)
+<code><a href="#class-Interval">Interval::</a></a>**xor(**other**)**</code> <b><sub><sup><code>PUBLIC  </code></sup></sub></b> [<img src="https://cdn.rawgit.com/github/octicons/master/svg/code.svg" height= "16px">](https://github.com/venkatperi/line-segment-ops/blob/v0.1.0/lib/Interval.coffee#L197)
+ [<img src="https://cdn.rawgit.com/github/octicons/master/svg/arrow-up.svg" height= "16px">](#class-Interval)
+
+* <code>other</code> the other [{Interval}](https://github.com/venkatperi/line-segment-ops/blob/v0.1.0/lib/Interval.coffee#L20)
 
 Compute an XOR with the given [{Interval}](https://github.com/venkatperi/line-segment-ops/blob/v0.1.0/lib/Interval.coffee#L20)
 
@@ -207,19 +224,20 @@ B and B with respect to  A, and corresponds to the XOR operation in
 Boolean logic.
 
 <em>Returns</em>
-* <code>Interval:</code> Returns the difference which is one of:
+* Returns the difference which is one of:
 
 * [{Interval}](https://github.com/venkatperi/line-segment-ops/blob/v0.1.0/lib/Interval.coffee#L20) 
 * {Array[{Interval}](https://github.com/venkatperi/line-segment-ops/blob/v0.1.0/lib/Interval.coffee#L20)}
 *
 
 
-<hr/>
-
-<code>Interval::**equals(**other**)**</code> <sub><sup><code>PUBLIC</code></sup></sub>
+######<a href="#" target="_blank"><img src="https://rawgit.com/venkatperi/line-segment-ops/master/assets/Line.svg" width="100%" height="1px"></a>
 
 
-* <code>other:</code> the other [{Interval}](https://github.com/venkatperi/line-segment-ops/blob/v0.1.0/lib/Interval.coffee#L20)
+<code><a href="#class-Interval">Interval::</a></a>**equals(**other**)**</code> <b><sub><sup><code>PUBLIC  </code></sup></sub></b> [<img src="https://cdn.rawgit.com/github/octicons/master/svg/code.svg" height= "16px">](https://github.com/venkatperi/line-segment-ops/blob/v0.1.0/lib/Interval.coffee#L219)
+ [<img src="https://cdn.rawgit.com/github/octicons/master/svg/arrow-up.svg" height= "16px">](#class-Interval)
+
+* <code>other</code> the other [{Interval}](https://github.com/venkatperi/line-segment-ops/blob/v0.1.0/lib/Interval.coffee#L20)
 
 Check if both [{Interval}](https://github.com/venkatperi/line-segment-ops/blob/v0.1.0/lib/Interval.coffee#L20)s are equal.
 
@@ -227,18 +245,22 @@ Two intervals are equal if their line segments are equal,
 i.e same start and end points.
 
 <em>Returns</em>
-* <code>Boolean:</code> Returns [{Boolean}](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean). True if the [{Interval}](https://github.com/venkatperi/line-segment-ops/blob/v0.1.0/lib/Interval.coffee#L20)s are equal.
+* Returns [{Boolean}](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean). True if the [{Interval}](https://github.com/venkatperi/line-segment-ops/blob/v0.1.0/lib/Interval.coffee#L20)s are equal.
 
 
-<hr/>
+######<a href="#" target="_blank"><img src="https://rawgit.com/venkatperi/line-segment-ops/master/assets/Line.svg" width="100%" height="1px"></a>
 
-<code>Interval::**toString(****)**</code> <sub><sup><code>PUBLIC</code></sup></sub>
 
+<code><a href="#class-Interval">Interval::</a></a>**toString(****)**</code> <b><sub><sup><code>PUBLIC  </code></sup></sub></b> [<img src="https://cdn.rawgit.com/github/octicons/master/svg/code.svg" height= "16px">](https://github.com/venkatperi/line-segment-ops/blob/v0.1.0/lib/Interval.coffee#L229)
+ [<img src="https://cdn.rawgit.com/github/octicons/master/svg/arrow-up.svg" height= "16px">](#class-Interval)
 
 
 Get a [{String}](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) representation of this [{Interval}](https://github.com/venkatperi/line-segment-ops/blob/v0.1.0/lib/Interval.coffee#L20)
 
 Return [{String}](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)
+
+
+
 
 
 
