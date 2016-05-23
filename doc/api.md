@@ -1,6 +1,7 @@
 ## API
 
-### Interval <sub><sup><code>CLASS</code></sup></sub> <sub><sup><code>PUBLIC</code></sup></sub>
+### Interval <sub><sup><code>CLASS</code></sup></sub>
+
 The [{Interval}](https://github.com/venkatperi/line-segment-ops/blob/v0.1.0/lib/Interval.coffee#L20) class represents a line segment on the
   the number line.
 
@@ -16,30 +17,53 @@ A couple of definitions:
 * The interior of an [{Interval}](https://github.com/venkatperi/line-segment-ops/blob/v0.1.0/lib/Interval.coffee#L20) is the set of all points
   in the [{Interval}](https://github.com/venkatperi/line-segment-ops/blob/v0.1.0/lib/Interval.coffee#L20) less its boundary (endpoints).
 
+#### Properties <sub><sup><code>Interval</code></sup></sub>
+
+
+**<code>a</code>** <sub><sup><code>Public</code></sup></sub>
+
+[{Number}](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) The start/left endpoint of this [{Interval}](https://github.com/venkatperi/line-segment-ops/blob/v0.1.0/lib/Interval.coffee#L20) 
+
+<hr/>
+
+**<code>b</code>** <sub><sup><code>Public</code></sup></sub>
+
+[{Number}](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) The end/right endpoint of this [{Interval}](https://github.com/venkatperi/line-segment-ops/blob/v0.1.0/lib/Interval.coffee#L20) 
+
+<hr/>
+
+**<code>degenerate</code>** <sub><sup><code>Public</code></sup></sub>
+
+[{Boolean}](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean) True if this `{Instance}` has the same start and end points  
+
 
 #### Methods <sub><sup><code>Interval</code></sup></sub>
 
 
-<code>Interval::**constructor(**arg1[, arg2]**)**</code> **<sub><sup><code>PUBLIC</code></sup></sub>**
 
-* <code>arg1:</code> can be:
-* [{String}](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) `<number> <sep> <number>` where sep can be any one of
-  a comma, semicolon, or a space
-* [{Array}](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array) of two [{Number}](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)s
-* [{Object}](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object) with one of these key combinations:
-  * `{from, to}`
-  * `{start, end}`
-  * `{a, b}`
-* [{Number}](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number), in which case `arg2` must be defined
-* <code>arg2:</code> [{Number}](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)
+<code>Interval::**constructor(**arg1[, arg2]**)**</code> **<sub><sup><code>Public</code></sup></sub>
+**
 
-Create a immutable [{Interval}](https://github.com/venkatperi/line-segment-ops/blob/v0.1.0/lib/Interval.coffee#L20) object
+* <code>arg1:</code> can be a [{String}](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) or an [{Array}](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array) or [{Object}](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object) or a [{Number}](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)
+* <code>arg2:</code> [{Number}](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number) 
+
+Creates a immutable [{Interval}](https://github.com/venkatperi/line-segment-ops/blob/v0.1.0/lib/Interval.coffee#L20) object
+
+`arg1` can be a:
+
+* [{String}](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String): `<number> <sep> <number>` where sep 
+  can be any one of a comma, semicolon, or a space
+* [{Array}](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)  of two [{Number}](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)s
+* [{Object}](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object) with one of these key combinations: 
+    `{from, to}` `{start, end}`  `{a, b}` 
+* a [{Number}](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number), in which case `arg2` must be defined
 
 
 
 <hr/>
 
-<code>Interval::**contains(**other**)**</code> **<sub><sup><code>PUBLIC</code></sup></sub>**
+<code>Interval::**contains(**other**)**</code> **<sub><sup><code>Public</code></sup></sub>
+**
 
 * <code>other:</code> the other [{Interval}](https://github.com/venkatperi/line-segment-ops/blob/v0.1.0/lib/Interval.coffee#L20) 
 
@@ -51,7 +75,8 @@ Checks if this [{Interval}](https://github.com/venkatperi/line-segment-ops/blob/
 
 <hr/>
 
-<code>Interval::**overlaps(**other**)**</code> **<sub><sup><code>PUBLIC</code></sup></sub>**
+<code>Interval::**overlaps(**other**)**</code> **<sub><sup><code>Public</code></sup></sub>
+**
 
 * <code>other:</code> the other [{Interval}](https://github.com/venkatperi/line-segment-ops/blob/v0.1.0/lib/Interval.coffee#L20)
 
@@ -66,7 +91,8 @@ but not all points.
 
 <hr/>
 
-<code>Interval::**within(**other**)**</code> **<sub><sup><code>PUBLIC</code></sup></sub>**
+<code>Interval::**within(**other**)**</code> **<sub><sup><code>Public</code></sup></sub>
+**
 
 * <code>other:</code> the other [{Interval}](https://github.com/venkatperi/line-segment-ops/blob/v0.1.0/lib/Interval.coffee#L20)
 
@@ -81,7 +107,8 @@ X is completely within Y and neither of their endpoints touch.
 
 <hr/>
 
-<code>Interval::**touches(**other**)**</code> **<sub><sup><code>PUBLIC</code></sup></sub>**
+<code>Interval::**touches(**other**)**</code> **<sub><sup><code>Public</code></sup></sub>
+**
 
 * <code>other:</code> the other [{Interval}](https://github.com/venkatperi/line-segment-ops/blob/v0.1.0/lib/Interval.coffee#L20)
 
@@ -98,7 +125,8 @@ Two line segments touch, if:
 
 <hr/>
 
-<code>Interval::**disjoint(**other**)**</code> **<sub><sup><code>PUBLIC</code></sup></sub>**
+<code>Interval::**disjoint(**other**)**</code> **<sub><sup><code>Public</code></sup></sub>
+**
 
 * <code>other:</code> the other [{Interval}](https://github.com/venkatperi/line-segment-ops/blob/v0.1.0/lib/Interval.coffee#L20)
 
@@ -113,7 +141,8 @@ i.e. if their intersection is the empty set.
 
 <hr/>
 
-<code>Interval::**union(**others**)**</code> **<sub><sup><code>PUBLIC</code></sup></sub>**
+<code>Interval::**union(**others**)**</code> **<sub><sup><code>Public</code></sup></sub>
+**
 
 * <code>others:</code> {Array[{Interval}](https://github.com/venkatperi/line-segment-ops/blob/v0.1.0/lib/Interval.coffee#L20)} One or more intervals
 
@@ -128,7 +157,8 @@ A union of intervals can result in an array of unconnected parts.
 
 <hr/>
 
-<code>Interval::**intersection(**other**)**</code> **<sub><sup><code>PUBLIC</code></sup></sub>**
+<code>Interval::**intersection(**other**)**</code> **<sub><sup><code>Public</code></sup></sub>
+**
 
 * <code>other:</code> the other [{Interval}](https://github.com/venkatperi/line-segment-ops/blob/v0.1.0/lib/Interval.coffee#L20)
 
@@ -140,7 +170,8 @@ Calculates the intersection, i.e. the points where they concur.
 
 <hr/>
 
-<code>Interval::**difference(**other**)**</code> **<sub><sup><code>PUBLIC</code></sup></sub>**
+<code>Interval::**difference(**other**)**</code> **<sub><sup><code>Public</code></sup></sub>
+**
 
 * <code>other:</code> the other [{Interval}](https://github.com/venkatperi/line-segment-ops/blob/v0.1.0/lib/Interval.coffee#L20)
 
@@ -159,7 +190,8 @@ in X which are not in Y.
 
 <hr/>
 
-<code>Interval::**xor(**other**)**</code> **<sub><sup><code>PUBLIC</code></sup></sub>**
+<code>Interval::**xor(**other**)**</code> **<sub><sup><code>Public</code></sup></sub>
+**
 
 * <code>other:</code> the other [{Interval}](https://github.com/venkatperi/line-segment-ops/blob/v0.1.0/lib/Interval.coffee#L20)
 
@@ -180,7 +212,8 @@ Boolean logic.
 
 <hr/>
 
-<code>Interval::**equals(**other**)**</code> **<sub><sup><code>PUBLIC</code></sup></sub>**
+<code>Interval::**equals(**other**)**</code> **<sub><sup><code>Public</code></sup></sub>
+**
 
 * <code>other:</code> the other [{Interval}](https://github.com/venkatperi/line-segment-ops/blob/v0.1.0/lib/Interval.coffee#L20)
 
@@ -195,7 +228,8 @@ i.e same start and end points.
 
 <hr/>
 
-<code>Interval::**toString(****)**</code> **<sub><sup><code>PUBLIC</code></sup></sub>**
+<code>Interval::**toString(****)**</code> **<sub><sup><code>Public</code></sup></sub>
+**
 
 
 Get a [{String}](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) representation of this [{Interval}](https://github.com/venkatperi/line-segment-ops/blob/v0.1.0/lib/Interval.coffee#L20)

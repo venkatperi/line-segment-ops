@@ -19,31 +19,37 @@ A couple of definitions:
 ###
 module.exports = class Interval
 
+  # Public: {Number} The start/left endpoint of this {Interval}
+  a: null
   Object.defineProperty @prototype, 'a',
     get : -> @_a
 
+  # Public: {Number} The end/right endpoint of this {Interval}
+  b: null
   Object.defineProperty @prototype, 'b',
     get : -> @_b
 
+  # Public: {Boolean} True if this {Instance} has the same start and end points 
+  degenerate: false
   Object.defineProperty @prototype, 'degenerate',
     get : -> @_a is @_b
 
+  # Public: {Array} The endpoints as an array 
   Object.defineProperty @prototype, 'endpoints',
     get : -> [ @_a, @_b ]
 
   ###
-  Public: Create a immutable {Interval} object
-
-  * `arg1` can be:
-    * {String} `<number> <sep> <number>` where sep can be any one of
-    a comma, semicolon, or a space
-    * {Array} of two {Number}s
-    * {Object} with one of these key combinations:
-      * `{from, to}`
-      * `{start, end}`
-      * `{a, b}`
-    * {Number}, in which case `arg2` must be defined
-  * `arg2` (optional) {Number}
+  Public: Creates a immutable {Interval} object
+  * `arg1` can be a {String} or an {Array} or {Object} or a {Number}
+  * `arg2` (optional) {Number} 
+  
+  `arg1` can be a:
+    * {String}: `<number> <sep> <number>` where sep 
+      can be any one of a comma, semicolon, or a space
+    * {Array}  of two {Number}s
+    * {Object} with one of these key combinations: 
+        `{from, to}` `{start, end}`  `{a, b}` 
+    * a {Number}, in which case `arg2` must be defined
   
   ###
   constructor : ( arg1, arg2 ) ->
