@@ -20,21 +20,20 @@ A couple of definitions:
 #### Methods <sub><sup><code>Interval</code></sup></sub>
 
 
-<code>Interval::**constructor(****)**</code> **<sub><sup><code>PUBLIC</code></sup></sub>**
+<code>Interval::**constructor(**arg1[, arg2]**)**</code> **<sub><sup><code>PUBLIC</code></sup></sub>**
 
+* <code>arg1:</code> can be:
+* [{String}](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) `<number> <sep> <number>` where sep can be any one of
+  a comma, semicolon, or a space
+* [{Array}](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array) of two [{Number}](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)s
+* [{Object}](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object) with one of these key combinations:
+  * `{from, to}`
+  * `{start, end}`
+  * `{a, b}`
+* [{Number}](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number), in which case `arg2` must be defined
+* <code>arg2:</code> [{Number}](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)
 
 Create a immutable [{Interval}](https://github.com/venkatperi/line-segment-ops/blob/v0.1.0/lib/Interval.coffee#L20) object
-
-Accepts the following types of inputs:
-
-* a [{String}](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) "<number> <sep> <number>" where sep can be any one of
-  a comma, semicolon, or a space
-* a {Array<Number>} of two numbers
-* an [{Object}](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object) with one of these key combinations:
-  * obj.from, obj.to
-  * obj.start, obj.end
-  * obj.a, obj.b
-* or 2 `{Numbers}`
 
 
 

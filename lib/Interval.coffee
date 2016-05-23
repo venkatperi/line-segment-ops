@@ -34,18 +34,19 @@ module.exports = class Interval
   ###
   Public: Create a immutable {Interval} object
 
-  Accepts the following types of inputs:
-  * a {String} "<number> <sep> <number>" where sep can be any one of
+  * `arg1` can be:
+    * {String} `<number> <sep> <number>` where sep can be any one of
     a comma, semicolon, or a space
-  * a {Array<Number>} of two numbers
-  * an {Object} with one of these key combinations:
-    * obj.from, obj.to
-    * obj.start, obj.end
-    * obj.a, obj.b
-  * or 2 {Numbers}
+    * {Array} of two {Number}s
+    * {Object} with one of these key combinations:
+      * `{from, to}`
+      * `{start, end}`
+      * `{a, b}`
+    * {Number}, in which case `arg2` must be defined
+  * `arg2` (optional) {Number}
   
   ###
-  constructor : ( args ) ->
+  constructor : ( arg1, arg2 ) ->
     @_open = [ false, false ]
     @_init.apply @, arguments
     throw new Error 'b < a' if @b < @a
