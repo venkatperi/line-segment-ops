@@ -29,28 +29,28 @@ module.exports = class Interval
   Object.defineProperty @prototype, 'b',
     get : -> @_b
 
-  # Public: {Boolean} True if this {Instance} has the same start and end points 
+  # Public: {Boolean} True if this {Instance} has the same start and end points
   degenerate: false
   Object.defineProperty @prototype, 'degenerate',
     get : -> @_a is @_b
 
-  # Public: {Array} The endpoints as an array 
+  # Public: {Array} The endpoints as an array
   Object.defineProperty @prototype, 'endpoints',
     get : -> [ @_a, @_b ]
 
   ###
   Public: Creates a immutable {Interval} object
   * `arg1` can be a {String} or an {Array} or {Object} or a {Number}
-  * `arg2` (optional) {Number} 
-  
+  * `arg2` (optional) {Number}
+
   `arg1` can be a:
-    * {String}: `<number> <sep> <number>` where sep 
+    * {String}: `<number> <sep> <number>` where sep
       can be any one of a comma, semicolon, or a space
     * {Array}  of two {Number}s
-    * {Object} with one of these key combinations: 
-        `{from, to}` `{start, end}`  `{a, b}` 
+    * {Object} with one of these key combinations:
+        `{from, to}` `{start, end}`  `{a, b}`
     * a {Number}, in which case `arg2` must be defined
-  
+
   ###
   constructor : ( arg1, arg2 ) ->
     @_open = [ false, false ]
@@ -60,8 +60,8 @@ module.exports = class Interval
   ###
   Public: Checks if this {Interval} contains the other.
 
-  * `other` the other {Interval} 
-  
+  * `other` the other {Interval}
+
   Returns {Boolean}. True if this {Interval} `contains` the other other.
 
   ###
@@ -72,14 +72,14 @@ module.exports = class Interval
 
   ###
   Public: Checks if this {Interval} overlaps another.
-  
-  For two {Interval}s to overlap they must have some points 
+
+  For two {Interval}s to overlap they must have some points
   but not all points.
 
   * `other` the other {Interval}
-  
+
   Returns {Boolean}. True if this {Interval} overlaps the other.
-  
+
   ###
   overlaps : ( other ) =>
     return false if @equals other
@@ -89,8 +89,8 @@ module.exports = class Interval
 
   ###
   Public: Checks if this {Interval} is fully within another.
-  
-  {Interval} X is said to be within another {Interval} Y if 
+
+  {Interval} X is said to be within another {Interval} Y if
   X is completely within Y and neither of their endpoints touch.
 
   * `other` the other {Interval}
@@ -120,9 +120,9 @@ module.exports = class Interval
 
   ###
   Public: Checks if this {Interval} is `disjoint` with another.
-  
-  Two {Interval}s are disjoint if they have no points in common, 
-  i.e. if their intersection is the empty set. 
+
+  Two {Interval}s are disjoint if they have no points in common,
+  i.e. if their intersection is the empty set.
 
   * `other` the other {Interval}
 
@@ -134,11 +134,11 @@ module.exports = class Interval
 
   ###
   Public: Calculates the union of the given {Intervals}
-  
+
   A union of intervals can result in an array of unconnected parts.
-  
+
   * `others` {Array{Interval}} One or more intervals
-  
+
   Returns {Interval}
   Returns {Array} of {Interval}
   ###
@@ -147,28 +147,29 @@ module.exports = class Interval
 
   ###
   Public: Calculates the intersection, i.e. the points where they concur.
-  
+
   * `other` the other {Interval}
-  
-  Returns an {Interval} with the intersection or `undefined` if the two do not intersect.
-  
+
+  Returns an {Interval} with the intersection or `undefined` if the two do
+  not intersect.
+
   ###
   intersection : ( other ) =>
     @_process 2, 2, other
 
   ###
   Public: Calculates the difference between this {Interval} and another.
-  
+
   The difference between {Interval} X and Y is all of the points
-  in X which are not in Y. 
+  in X which are not in Y.
 
   * `other` the other {Interval}
-  
+
   Returns the difference which is one of:
-    * {Interval} 
+    * {Interval}
     * {Array{Interval}}
     * undefined
-  
+
   ###
   difference : ( other ) =>
     res = @_process 1, 1, other
@@ -180,19 +181,19 @@ module.exports = class Interval
 
   ###
   Public: Compute an XOR with the given {Interval}
-  
+
   The set of elements belonging to one but not both of two given sets.
   It is therefore the union of the complement of A with respect to
   B and B with respect to  A, and corresponds to the XOR operation in
   Boolean logic.
-  
+
   * `other` the other {Interval}
-  
+
   Returns the difference which is one of:
-    * {Interval} 
+    * {Interval}
     * {Array{Interval}}
     * undefined
-  
+
   ###
   xor : ( other ) =>
     res = []
@@ -207,14 +208,14 @@ module.exports = class Interval
 
   ###
   Public: Check if both {Interval}s are equal.
-  
+
   Two intervals are equal if their line segments are equal,
   i.e same start and end points.
-  
+
   * `other` the other {Interval}
-  
+
   Returns {Boolean}. True if the {Interval}s are equal.
-  
+
   ###
   equals : ( other ) =>
     @_a is other._a and
@@ -222,9 +223,9 @@ module.exports = class Interval
 
   ###
   Public: Get a {String} representation of this {Interval}
-  
+
   Return {String}
-  
+
   ###
   toString : =>
     "[#{@_a},#{@_b}]"
@@ -278,5 +279,4 @@ module.exports = class Interval
       throw new Error "Can't create {Interval} from '#{arg}' (type #{type})"
     handler.apply @, arguments
 
-      
-      
+
