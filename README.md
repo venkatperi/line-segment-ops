@@ -1,11 +1,11 @@
-# interval-math
+# line-segment-ops
 Set Theory and Topological Relationships on Line Segments
 
 ## Installation
 Install with npm.
 
 ```
-npm install --save interval-math
+npm install --save line-segment-ops
 ```
 
 ## Examples
