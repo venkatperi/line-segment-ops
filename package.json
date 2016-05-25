@@ -8,6 +8,7 @@
   "preferGlobal": false,
   "description": "Set Theory and Topological Relationships on Line Segments",
   "dependencies": {
+    "marked": "^0.3.5"
   },
   "bundleDependencies": [],
   "main": "dist/index",
@@ -33,6 +34,5 @@
   },
   "author": "Venkat Peri <venkatperi@gmail.com> (http://www.vperi.com/)",
   "license": "MIT",
-  "keywords": [
-  ]
+  "keywords": []
 }

@@ -279,4 +279,3 @@ module.exports = class Interval
       throw new Error "Can't create {Interval} from '#{arg}' (type #{type})"
     handler.apply @, arguments
 
-

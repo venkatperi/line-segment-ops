@@ -1,0 +1,1017 @@
+[
+  {
+    "repository": "https://github.com/venkatperi/line-segment-ops.git",
+    "version": "0.1.0",
+    "files": {
+      "coffee-coverage-loader.coffee": {
+        "objects": {
+          "0": {
+            "17": {
+              "name": "coffeeCoverage",
+              "type": "import",
+              "range": [
+                [
+                  0,
+                  17
+                ],
+                [
+                  0,
+                  42
+                ]
+              ],
+              "bindingType": "variable",
+              "module": "coffee-coverage"
+            }
+          },
+          "1": {
+            "14": {
+              "name": "__dirname",
+              "type": "primitive",
+              "range": [
+                [
+                  1,
+                  14
+                ],
+                [
+                  1,
+                  22
+                ]
+              ]
+            }
+          },
+          "9": {
+            "17": {
+              "name": "'istanbul'",
+              "type": "primitive",
+              "range": [
+                [
+                  9,
+                  17
+                ],
+                [
+                  9,
+                  26
+                ]
+              ]
+            }
+          },
+          "10": {
+            "13": {
+              "name": "projectRoot",
+              "type": "primitive",
+              "range": [
+                [
+                  10,
+                  13
+                ],
+                [
+                  10,
+                  23
+                ]
+              ]
+            }
+          },
+          "11": {
+            "12": {
+              "type": "primitive",
+              "range": [
+                [
+                  11,
+                  12
+                ],
+                [
+                  18,
+                  2
+                ]
+              ]
+            }
+          },
+          "19": {
+            "16": {
+              "name": "coverageVar",
+              "type": "primitive",
+              "range": [
+                [
+                  19,
+                  16
+                ],
+                [
+                  19,
+                  26
+                ]
+              ]
+            }
+          },
+          "20": {
+            "16": {
+              "name": "writeOnExit",
+              "type": "primitive",
+              "range": [
+                [
+                  20,
+                  16
+                ],
+                [
+                  20,
+                  26
+                ]
+              ]
+            }
+          },
+          "21": {
+            "12": {
+              "type": "primitive",
+              "range": [
+                [
+                  21,
+                  12
+                ],
+                [
+                  21,
+                  15
+                ]
+              ]
+            }
+          }
+        },
+        "exports": {}
+      },
+      "index.coffee": {
+        "objects": {
+          "0": {
+            "11": {
+              "name": "Interval",
+              "type": "import",
+              "range": [
+                [
+                  0,
+                  11
+                ],
+                [
+                  0,
+                  34
+                ]
+              ],
+              "bindingType": "variable",
+              "path": "./lib/Interval"
+            }
+          },
+          "2": {
+            "11": {
+              "name": "interval",
+              "bindingType": "variable",
+              "type": "function",
+              "paramNames": [
+                "arg"
+              ],
+              "range": [
+                [
+                  2,
+                  11
+                ],
+                [
+                  2,
+                  43
+                ]
+              ]
+            }
+          },
+          "3": {
+            "20": {
+              "name": "Interval",
+              "type": "primitive",
+              "range": [
+                [
+                  3,
+                  20
+                ],
+                [
+                  3,
+                  27
+                ]
+              ]
+            }
+          }
+        },
+        "exports": 5
+      },
+      "lib/Interval.coffee": {
+        "objects": {
+          "0": {
+            "1": {
+              "type": "import",
+              "range": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  0,
+                  8
+                ]
+              ],
+              "bindingType": "variable",
+              "path": "./helpers",
+              "name": "getClass",
+              "exportsProperty": "getClass"
+            },
+            "11": {
+              "type": "import",
+              "range": [
+                [
+                  0,
+                  11
+                ],
+                [
+                  0,
+                  17
+                ]
+              ],
+              "bindingType": "variable",
+              "path": "./helpers",
+              "name": "flatten",
+              "exportsProperty": "flatten"
+            }
+          },
+          "2": {
+            "13": {
+              "type": "primitive",
+              "range": [
+                [
+                  2,
+                  13
+                ],
+                [
+                  2,
+                  66
+                ]
+              ]
+            }
+          },
+          "19": {
+            "17": {
+              "type": "class",
+              "name": "Interval",
+              "bindingType": "exports",
+              "classProperties": [],
+              "prototypeProperties": [
+                [
+                  22,
+                  5
+                ],
+                [
+                  27,
+                  5
+                ],
+                [
+                  32,
+                  14
+                ],
+                [
+                  54,
+                  16
+                ],
+                [
+                  67,
+                  13
+                ],
+                [
+                  83,
+                  13
+                ],
+                [
+                  100,
+                  11
+                ],
+                [
+                  116,
+                  12
+                ],
+                [
+                  131,
+                  13
+                ],
+                [
+                  144,
+                  10
+                ],
+                [
+                  156,
+                  17
+                ],
+                [
+                  173,
+                  15
+                ],
+                [
+                  197,
+                  8
+                ],
+                [
+                  219,
+                  11
+                ],
+                [
+                  229,
+                  13
+                ],
+                [
+                  232,
+                  13
+                ],
+                [
+                  258,
+                  16
+                ],
+                [
+                  262,
+                  15
+                ],
+                [
+                  265,
+                  16
+                ],
+                [
+                  268,
+                  16
+                ],
+                [
+                  274,
+                  10
+                ]
+              ],
+              "doc": "\nPublic: The {Interval} class represents a line segment on the\n  the number line.\n\nAn [interval](http://mathworld.wolfram.com/Interval.html)\nis a connected portion of the real line.\n\nAlso see [A Small Set of Formal Topological Relationships Suitable\n  for End User Interaction](http://www.gdmc.nl/oosterom/atti.pdf)\n\nA couple of definitions:\n  * The boundary of an {Interval} is set of its two endpoints.\n  * The interior of an {Interval} is the set of all points\n    in the {Interval} less its boundary (endpoints).\n",
+              "range": [
+                [
+                  19,
+                  17
+                ],
+                [
+                  279,
+                  30
+                ]
+              ]
+            }
+          },
+          "22": {
+            "5": {
+              "name": "a",
+              "type": "primitive",
+              "range": [
+                [
+                  22,
+                  5
+                ],
+                [
+                  22,
+                  8
+                ]
+              ],
+              "bindingType": "prototypeProperty",
+              "doc": "Public: {Number} The start/left endpoint of this {Interval} "
+            }
+          },
+          "27": {
+            "5": {
+              "name": "b",
+              "type": "primitive",
+              "range": [
+                [
+                  27,
+                  5
+                ],
+                [
+                  27,
+                  8
+                ]
+              ],
+              "bindingType": "prototypeProperty",
+              "doc": "Public: {Number} The end/right endpoint of this {Interval} "
+            }
+          },
+          "32": {
+            "14": {
+              "name": "degenerate",
+              "type": "primitive",
+              "range": [
+                [
+                  32,
+                  14
+                ],
+                [
+                  32,
+                  18
+                ]
+              ],
+              "bindingType": "prototypeProperty",
+              "doc": "Public: {Boolean} True if this {Instance} has the same start and end points "
+            }
+          },
+          "40": {
+            "2": {
+              "type": "comment",
+              "doc": "\nPublic: Creates a immutable {Interval} object\n* `arg1` can be a {String} or an {Array} or {Object} or a {Number}\n* `arg2` (optional) {Number}\n\n`arg1` can be a:\n  * {String}: `<number> <sep> <number>` where sep\n    can be any one of a comma, semicolon, or a space\n  * {Array}  of two {Number}s\n  * {Object} with one of these key combinations:\n      `{from, to}` `{start, end}`  `{a, b}`\n  * a {Number}, in which case `arg2` must be defined\n\n",
+              "range": [
+                [
+                  40,
+                  2
+                ],
+                [
+                  53,
+                  4
+                ]
+              ]
+            }
+          },
+          "54": {
+            "16": {
+              "name": "constructor",
+              "bindingType": "prototypeProperty",
+              "type": "function",
+              "paramNames": [
+                "arg1",
+                "arg2"
+              ],
+              "range": [
+                [
+                  54,
+                  16
+                ],
+                [
+                  59,
+                  1
+                ]
+              ],
+              "doc": "\nPublic: Creates a immutable {Interval} object\n* `arg1` can be a {String} or an {Array} or {Object} or a {Number}\n* `arg2` (optional) {Number}\n\n`arg1` can be a:\n  * {String}: `<number> <sep> <number>` where sep\n    can be any one of a comma, semicolon, or a space\n  * {Array}  of two {Number}s\n  * {Object} with one of these key combinations:\n      `{from, to}` `{start, end}`  `{a, b}`\n  * a {Number}, in which case `arg2` must be defined\n\n"
+            }
+          },
+          "59": {
+            "2": {
+              "type": "comment",
+              "doc": "\nPublic: Checks if this {Interval} contains the other.\n\n* `other` the other {Interval}\n\nReturns {Boolean}. True if this {Interval} `contains` the other other.\n\n",
+              "range": [
+                [
+                  59,
+                  2
+                ],
+                [
+                  66,
+                  4
+                ]
+              ]
+            }
+          },
+          "67": {
+            "13": {
+              "name": "contains",
+              "bindingType": "prototypeProperty",
+              "type": "function",
+              "paramNames": [
+                "other"
+              ],
+              "range": [
+                [
+                  67,
+                  13
+                ],
+                [
+                  72,
+                  1
+                ]
+              ],
+              "doc": "\nPublic: Checks if this {Interval} contains the other.\n\n* `other` the other {Interval}\n\nReturns {Boolean}. True if this {Interval} `contains` the other other.\n\n"
+            }
+          },
+          "72": {
+            "2": {
+              "type": "comment",
+              "doc": "\nPublic: Checks if this {Interval} overlaps another.\n\nFor two {Interval}s to overlap they must have some points\nbut not all points.\n\n* `other` the other {Interval}\n\nReturns {Boolean}. True if this {Interval} overlaps the other.\n\n",
+              "range": [
+                [
+                  72,
+                  2
+                ],
+                [
+                  82,
+                  4
+                ]
+              ]
+            }
+          },
+          "83": {
+            "13": {
+              "name": "overlaps",
+              "bindingType": "prototypeProperty",
+              "type": "function",
+              "paramNames": [
+                "other"
+              ],
+              "range": [
+                [
+                  83,
+                  13
+                ],
+                [
+                  89,
+                  1
+                ]
+              ],
+              "doc": "\nPublic: Checks if this {Interval} overlaps another.\n\nFor two {Interval}s to overlap they must have some points\nbut not all points.\n\n* `other` the other {Interval}\n\nReturns {Boolean}. True if this {Interval} overlaps the other.\n\n"
+            }
+          },
+          "89": {
+            "2": {
+              "type": "comment",
+              "doc": "\nPublic: Checks if this {Interval} is fully within another.\n\n{Interval} X is said to be within another {Interval} Y if\nX is completely within Y and neither of their endpoints touch.\n\n* `other` the other {Interval}\n\nReturns {Boolean}. True if this {Interval} is within the other.\n\n",
+              "range": [
+                [
+                  89,
+                  2
+                ],
+                [
+                  99,
+                  4
+                ]
+              ]
+            }
+          },
+          "100": {
+            "11": {
+              "name": "within",
+              "bindingType": "prototypeProperty",
+              "type": "function",
+              "paramNames": [
+                "other"
+              ],
+              "range": [
+                [
+                  100,
+                  11
+                ],
+                [
+                  104,
+                  1
+                ]
+              ],
+              "doc": "\nPublic: Checks if this {Interval} is fully within another.\n\n{Interval} X is said to be within another {Interval} Y if\nX is completely within Y and neither of their endpoints touch.\n\n* `other` the other {Interval}\n\nReturns {Boolean}. True if this {Interval} is within the other.\n\n"
+            }
+          },
+          "104": {
+            "2": {
+              "type": "comment",
+              "doc": "\nPublic: Checks if this {Interval} touches anothe.\n\nTwo line segments touch, if:\n  * one their endpoints touch\n  * their interiors do not share any common points\n\n* `other` the other {Interval}\n\nReturns {Boolean}. True if this {Interval} touches the other.\n\n",
+              "range": [
+                [
+                  104,
+                  2
+                ],
+                [
+                  115,
+                  4
+                ]
+              ]
+            }
+          },
+          "116": {
+            "12": {
+              "name": "touches",
+              "bindingType": "prototypeProperty",
+              "type": "function",
+              "paramNames": [
+                "other"
+              ],
+              "range": [
+                [
+                  116,
+                  12
+                ],
+                [
+                  120,
+                  1
+                ]
+              ],
+              "doc": "\nPublic: Checks if this {Interval} touches anothe.\n\nTwo line segments touch, if:\n  * one their endpoints touch\n  * their interiors do not share any common points\n\n* `other` the other {Interval}\n\nReturns {Boolean}. True if this {Interval} touches the other.\n\n"
+            }
+          },
+          "120": {
+            "2": {
+              "type": "comment",
+              "doc": "\nPublic: Checks if this {Interval} is `disjoint` with another.\n\nTwo {Interval}s are disjoint if they have no points in common,\ni.e. if their intersection is the empty set.\n\n* `other` the other {Interval}\n\nReturns {Boolean}. True if this {Interval} is disjoint with the other.\n\n",
+              "range": [
+                [
+                  120,
+                  2
+                ],
+                [
+                  130,
+                  4
+                ]
+              ]
+            }
+          },
+          "131": {
+            "13": {
+              "name": "disjoint",
+              "bindingType": "prototypeProperty",
+              "type": "function",
+              "paramNames": [
+                "other"
+              ],
+              "range": [
+                [
+                  131,
+                  13
+                ],
+                [
+                  134,
+                  1
+                ]
+              ],
+              "doc": "\nPublic: Checks if this {Interval} is `disjoint` with another.\n\nTwo {Interval}s are disjoint if they have no points in common,\ni.e. if their intersection is the empty set.\n\n* `other` the other {Interval}\n\nReturns {Boolean}. True if this {Interval} is disjoint with the other.\n\n"
+            }
+          },
+          "134": {
+            "2": {
+              "type": "comment",
+              "doc": "\nPublic: Calculates the union of the given {Intervals}\n\nA union of intervals can result in an array of unconnected parts.\n\n* `others` {Array{Interval}} One or more intervals\n\nReturns {Interval}\nReturns {Array} of {Interval}\n",
+              "range": [
+                [
+                  134,
+                  2
+                ],
+                [
+                  143,
+                  4
+                ]
+              ]
+            }
+          },
+          "144": {
+            "10": {
+              "name": "union",
+              "bindingType": "prototypeProperty",
+              "type": "function",
+              "paramNames": [
+                "others"
+              ],
+              "range": [
+                [
+                  144,
+                  10
+                ],
+                [
+                  147,
+                  1
+                ]
+              ],
+              "doc": "\nPublic: Calculates the union of the given {Intervals}\n\nA union of intervals can result in an array of unconnected parts.\n\n* `others` {Array{Interval}} One or more intervals\n\nReturns {Interval}\nReturns {Array} of {Interval}\n"
+            }
+          },
+          "147": {
+            "2": {
+              "type": "comment",
+              "doc": "\nPublic: Calculates the intersection, i.e. the points where they concur.\n\n* `other` the other {Interval}\n\nReturns an {Interval} with the intersection or `undefined` if the two do\nnot intersect.\n\n",
+              "range": [
+                [
+                  147,
+                  2
+                ],
+                [
+                  155,
+                  4
+                ]
+              ]
+            }
+          },
+          "156": {
+            "17": {
+              "name": "intersection",
+              "bindingType": "prototypeProperty",
+              "type": "function",
+              "paramNames": [
+                "other"
+              ],
+              "range": [
+                [
+                  156,
+                  17
+                ],
+                [
+                  159,
+                  1
+                ]
+              ],
+              "doc": "\nPublic: Calculates the intersection, i.e. the points where they concur.\n\n* `other` the other {Interval}\n\nReturns an {Interval} with the intersection or `undefined` if the two do\nnot intersect.\n\n"
+            }
+          },
+          "159": {
+            "2": {
+              "type": "comment",
+              "doc": "\nPublic: Calculates the difference between this {Interval} and another.\n\nThe difference between {Interval} X and Y is all of the points\nin X which are not in Y.\n\n* `other` the other {Interval}\n\nReturns the difference which is one of:\n  * {Interval}\n  * {Array{Interval}}\n  * undefined\n\n",
+              "range": [
+                [
+                  159,
+                  2
+                ],
+                [
+                  172,
+                  4
+                ]
+              ]
+            }
+          },
+          "173": {
+            "15": {
+              "name": "difference",
+              "bindingType": "prototypeProperty",
+              "type": "function",
+              "paramNames": [
+                "other"
+              ],
+              "range": [
+                [
+                  173,
+                  15
+                ],
+                [
+                  181,
+                  1
+                ]
+              ],
+              "doc": "\nPublic: Calculates the difference between this {Interval} and another.\n\nThe difference between {Interval} X and Y is all of the points\nin X which are not in Y.\n\n* `other` the other {Interval}\n\nReturns the difference which is one of:\n  * {Interval}\n  * {Array{Interval}}\n  * undefined\n\n"
+            }
+          },
+          "181": {
+            "2": {
+              "type": "comment",
+              "doc": "\nPublic: Compute an XOR with the given {Interval}\n\nThe set of elements belonging to one but not both of two given sets.\nIt is therefore the union of the complement of A with respect to\nB and B with respect to  A, and corresponds to the XOR operation in\nBoolean logic.\n\n* `other` the other {Interval}\n\nReturns the difference which is one of:\n  * {Interval}\n  * {Array{Interval}}\n  * undefined\n\n",
+              "range": [
+                [
+                  181,
+                  2
+                ],
+                [
+                  196,
+                  4
+                ]
+              ]
+            }
+          },
+          "197": {
+            "8": {
+              "name": "xor",
+              "bindingType": "prototypeProperty",
+              "type": "function",
+              "paramNames": [
+                "other"
+              ],
+              "range": [
+                [
+                  197,
+                  8
+                ],
+                [
+                  208,
+                  1
+                ]
+              ],
+              "doc": "\nPublic: Compute an XOR with the given {Interval}\n\nThe set of elements belonging to one but not both of two given sets.\nIt is therefore the union of the complement of A with respect to\nB and B with respect to  A, and corresponds to the XOR operation in\nBoolean logic.\n\n* `other` the other {Interval}\n\nReturns the difference which is one of:\n  * {Interval}\n  * {Array{Interval}}\n  * undefined\n\n"
+            }
+          },
+          "208": {
+            "2": {
+              "type": "comment",
+              "doc": "\nPublic: Check if both {Interval}s are equal.\n\nTwo intervals are equal if their line segments are equal,\ni.e same start and end points.\n\n* `other` the other {Interval}\n\nReturns {Boolean}. True if the {Interval}s are equal.\n\n",
+              "range": [
+                [
+                  208,
+                  2
+                ],
+                [
+                  218,
+                  4
+                ]
+              ]
+            }
+          },
+          "219": {
+            "11": {
+              "name": "equals",
+              "bindingType": "prototypeProperty",
+              "type": "function",
+              "paramNames": [
+                "other"
+              ],
+              "range": [
+                [
+                  219,
+                  11
+                ],
+                [
+                  223,
+                  1
+                ]
+              ],
+              "doc": "\nPublic: Check if both {Interval}s are equal.\n\nTwo intervals are equal if their line segments are equal,\ni.e same start and end points.\n\n* `other` the other {Interval}\n\nReturns {Boolean}. True if the {Interval}s are equal.\n\n"
+            }
+          },
+          "223": {
+            "2": {
+              "type": "comment",
+              "doc": "\nPublic: Get a {String} representation of this {Interval}\n\nReturn {String}\n\n",
+              "range": [
+                [
+                  223,
+                  2
+                ],
+                [
+                  228,
+                  4
+                ]
+              ]
+            }
+          },
+          "229": {
+            "13": {
+              "name": "toString",
+              "bindingType": "prototypeProperty",
+              "type": "function",
+              "paramNames": [],
+              "range": [
+                [
+                  229,
+                  13
+                ],
+                [
+                  232,
+                  1
+                ]
+              ],
+              "doc": "\nPublic: Get a {String} representation of this {Interval}\n\nReturn {String}\n\n"
+            }
+          },
+          "232": {
+            "13": {
+              "name": "_process",
+              "bindingType": "prototypeProperty",
+              "type": "function",
+              "paramNames": [
+                "min",
+                "max",
+                "others"
+              ],
+              "range": [
+                [
+                  232,
+                  13
+                ],
+                [
+                  258,
+                  1
+                ]
+              ]
+            }
+          },
+          "258": {
+            "16": {
+              "name": "_fromString",
+              "bindingType": "prototypeProperty",
+              "type": "function",
+              "paramNames": [
+                "str"
+              ],
+              "range": [
+                [
+                  258,
+                  16
+                ],
+                [
+                  262,
+                  1
+                ]
+              ]
+            }
+          },
+          "262": {
+            "15": {
+              "name": "_fromArray",
+              "bindingType": "prototypeProperty",
+              "type": "function",
+              "paramNames": [
+                "arr"
+              ],
+              "range": [
+                [
+                  262,
+                  15
+                ],
+                [
+                  265,
+                  1
+                ]
+              ]
+            }
+          },
+          "265": {
+            "16": {
+              "name": "_fromNumber",
+              "bindingType": "prototypeProperty",
+              "type": "function",
+              "paramNames": [
+                "num"
+              ],
+              "range": [
+                [
+                  265,
+                  16
+                ],
+                [
+                  268,
+                  1
+                ]
+              ]
+            }
+          },
+          "268": {
+            "16": {
+              "name": "_fromObject",
+              "bindingType": "prototypeProperty",
+              "type": "function",
+              "paramNames": [
+                "obj"
+              ],
+              "range": [
+                [
+                  268,
+                  16
+                ],
+                [
+                  274,
+                  1
+                ]
+              ]
+            }
+          },
+          "274": {
+            "10": {
+              "name": "_init",
+              "bindingType": "prototypeProperty",
+              "type": "function",
+              "paramNames": [
+                "arg"
+              ],
+              "range": [
+                [
+                  274,
+                  10
+                ],
+                [
+                  279,
+                  30
+                ]
+              ]
+            }
+          }
+        },
+        "exports": 19
+      },
+      "lib/helpers.coffee": {
+        "objects": {
+          "13": {
+            "13": {
+              "name": "getClass",
+              "type": "primitive",
+              "range": [
+                [
+                  13,
+                  13
+                ],
+                [
+                  13,
+                  20
+                ]
+              ]
+            }
+          },
+          "14": {
+            "12": {
+              "name": "flatten",
+              "type": "primitive",
+              "range": [
+                [
+                  14,
+                  12
+                ],
+                [
+                  14,
+                  18
+                ]
+              ]
+            }
+          }
+        },
+        "exports": 13
+      }
+    }
+  }
+]
