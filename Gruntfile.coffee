@@ -16,11 +16,15 @@ config = ( grunt ) ->
         'no_trailing_whitespace' :
           'level' : 'warn'
 
+    atomdoc_md :
+      readme :
+        doc : '.'
+        name : 'README.md'
 
     watch : { coffee : { tasks : [ 'coffee' ], files : src } }
 
-
     exec :
+      atomdoc : { cmd : 'atomdoc-md generate . --doc . -n README.md' }
       mocha : { cmd : 'mocha --require ./coffee-coverage-loader.coffee' }
       istanbul : { cmd : 'istanbul report lcov' }
       open_coverage : { cmd : 'open ./coverage/lcov-report/index.html' }
@@ -28,7 +32,7 @@ config = ( grunt ) ->
   register :
     coverage : [ 'exec:istanbul', 'exec:open_coverage' ]
     test : [ 'exec:mocha', 'coverage' ]
-    default : [ 'coffeelint', 'clean:dist', 'coffee:dist' ]
+    default : [ 'coffeelint', 'clean:dist', 'coffee:dist', 'exec:atomdoc' ]
 
 doConfig = ( cfg ) -> ( grunt ) ->
   opts = cfg grunt
